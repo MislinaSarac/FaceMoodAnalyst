@@ -15,6 +15,21 @@ class _CalenderViewState extends State<CalenderView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: const Text(
+          'Calendar',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        backgroundColor: Colors.yellowAccent.shade700,
+      ),
       body: SafeArea(
         child: CalendarDatePicker2(
           config: CalendarDatePicker2WithActionButtonsConfig(

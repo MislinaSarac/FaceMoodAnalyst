@@ -25,18 +25,6 @@ class _NavbarState extends State<Navbar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 78,
-        title: const Text(
-          'EmojiGoo ',
-          style: TextStyle(
-            fontStyle: FontStyle.italic,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        backgroundColor: Colors.yellowAccent.shade700,
-        centerTitle: true,
-      ),
       body: IndexedStack(
         index: _currentIndex,
         children: _pages,
