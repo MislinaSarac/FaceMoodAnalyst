@@ -31,7 +31,7 @@ class _HomeViewState extends State<HomeView> {
             alignment: Alignment.bottomLeft,
             padding: const EdgeInsets.all(10),
             child: Text(
-              'WELCOME,',
+              'Welcome; ',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -41,9 +41,9 @@ class _HomeViewState extends State<HomeView> {
               textAlign: TextAlign.center,
             ),
           ),
-          // Yap 1
           Card(
-            color: Colors.yellowAccent[700],
+            //color: Colors.yellowAccent[700],
+            color: Colors.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
@@ -67,7 +67,7 @@ class _HomeViewState extends State<HomeView> {
                         Text(
                           'What\'s up',
                           style: TextStyle(
-                              fontSize: 24,
+                              fontSize: 20,
                               fontWeight: FontWeight.bold,
                               fontStyle: FontStyle.italic),
                         ),
@@ -80,17 +80,16 @@ class _HomeViewState extends State<HomeView> {
                     ),
                     Icon(
                       Icons.snapchat,
-                      size: 45,
-                      color: Colors.white60,
+                      size: 40,
+                      color: Colors.amber,
                     ),
                   ],
                 ),
               ),
             ),
           ),
-
           Card(
-            color: const Color.fromARGB(255, 254, 245, 201),
+            color: Colors.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
@@ -114,7 +113,7 @@ class _HomeViewState extends State<HomeView> {
                         Text(
                           'Came Onn,',
                           style: TextStyle(
-                              fontSize: 24,
+                              fontSize: 20,
                               fontWeight: FontWeight.bold,
                               fontStyle: FontStyle.italic),
                         ),
@@ -127,15 +126,14 @@ class _HomeViewState extends State<HomeView> {
                     ),
                     Icon(
                       Icons.question_mark_sharp,
-                      size: 40,
-                      color: Colors.white60,
+                      size: 35,
+                      color: Colors.amber,
                     ),
                   ],
                 ),
               ),
             ),
           ),
-
           const SizedBox(height: 20),
           Align(
             alignment: Alignment.bottomLeft,
@@ -195,8 +193,8 @@ class _HomeViewState extends State<HomeView> {
                       children: [
                         Image.asset(
                           emoji.imagePath,
-                          height: 80,
-                          width: 80,
+                          height: 75,
+                          width: 75,
                         ),
                         const SizedBox(height: 10),
                         Text(
@@ -237,37 +235,37 @@ final List<Emoji> emojis = [
         'Form one\'s features into a pleased, kind, or amused expression,' +
             'typically with the corners of the mouth turned up and the front teeth exposed.' +
             '\n They are happy :)',
-    imagePath: 'assets/images/smileCloud.png',
+    imagePath: 'assets/images/smile.png',
   ),
   Emoji(
     title: 'Angry ',
     description:
         'Feeling or showing strong annoyance, displeasure, or hostility; full of anger.' +
             '\n They are angry...',
-    imagePath: 'assets/images/angryCloud.png',
+    imagePath: 'assets/images/angry.png',
   ),
   Emoji(
     title: 'Saddes ',
     description:
         'Feeling or showing sorrow; unhappy.                                                     ' +
             'They are unhappy :(',
-    imagePath: 'assets/images/sadCloud.png',
+    imagePath: 'assets/images/sad.png',
   ),
   Emoji(
     title: 'Fear ',
     description: 'Our emotional reaction to something that seems dangerous. ',
-    imagePath: 'assets/images/smile.png',
+    imagePath: 'assets/images/fear.png',
   ),
   Emoji(
     title: 'Uncertain ',
     description: 'Of a person not completely confident or sure of something..',
-    imagePath: 'assets/images/angry.png',
+    imagePath: 'assets/images/uncertain.png',
   ),
   Emoji(
     title: 'Contempt ',
     description:
         'It is a behavior that evokes a sense of superiority and the right to judge over individuals, social groups and ' +
             'ultimately ideologies, among the feelings of contempt, disgust and anger..',
-    imagePath: 'assets/images/sad.png',
+    imagePath: 'assets/images/contempt.png',
   ),
 ];

@@ -30,19 +30,32 @@ class _CalenderViewState extends State<CalenderView> {
         ),
         backgroundColor: Colors.yellowAccent.shade700,
       ),
-      body: SafeArea(
-        child: CalendarDatePicker2(
-          config: CalendarDatePicker2WithActionButtonsConfig(
-            dayBuilder: _dayBuilder,
-            weekdayLabelTextStyle:
-                context.general.textTheme.bodyLarge?.copyWith(
-              fontWeight: FontWeight.bold,
-              color: Colors.deepPurple,
+      body: Column(
+        children: [
+          SafeArea(
+            child: CalendarDatePicker2(
+              config: CalendarDatePicker2WithActionButtonsConfig(
+                dayBuilder: _dayBuilder,
+                weekdayLabelTextStyle:
+                    context.general.textTheme.bodyLarge?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.deepPurple,
+                ),
+              ),
+              value: [],
+              onValueChanged: (value) {},
             ),
           ),
-          value: [],
-          onValueChanged: (value) {},
-        ),
+          Image.asset(
+            'assets/images/calendar.png',
+            width: 180,
+            height: 180,
+          ),
+          const Text(
+            'How\'s your day going',
+            style: TextStyle(fontStyle: FontStyle.italic, fontSize: 15),
+          )
+        ],
       ),
     );
   }
