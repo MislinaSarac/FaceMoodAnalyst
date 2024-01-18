@@ -42,11 +42,18 @@ class _SplashViewState extends State<SplashView> {
             const Text(
               'EmojiGooo!',
               style: TextStyle(
-                  fontSize: 20.0,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.italic,
                   color: const Color.fromARGB(255, 243, 207, 28)),
             ),
+            Text(
+              'Discover the perfect emoji for every situation',
+              style: TextStyle(
+                fontStyle: FontStyle.italic,
+                fontSize: 15,
+              ),
+            )
           ],
         ),
       ),

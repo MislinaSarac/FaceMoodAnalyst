@@ -2,7 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_face_detection/ui/Screens/Calender/calender_view.dart';
 import 'package:flutter_face_detection/ui/Screens/home/home_view.dart';
-import 'package:flutter_face_detection/ui/Screens/profile/profile_view.dart';
+//import 'package:flutter_face_detection/ui/Screens/profile/profile_view.dart';
 import 'package:flutter_face_detection/ui/Screens/scan/scan_view.dart';
 
 class Navbar extends StatefulWidget {
@@ -19,8 +19,7 @@ class _NavbarState extends State<Navbar> {
     const HomeView(),
     const ScanView(),
     const CalenderView(),
-    const ProfileView()
-    // Page3(),
+    //const ProfileView()
   ];
   @override
   Widget build(BuildContext context) {
@@ -43,7 +42,7 @@ class _NavbarState extends State<Navbar> {
             Icon(Icons.home, color: Colors.white),
             Icon(Icons.camera_enhance_rounded, color: Colors.white),
             Icon(Icons.calendar_month_rounded, color: Colors.white),
-            Icon(Icons.person_3, color: Colors.white),
+            //Icon(Icons.person_3, color: Colors.white),
           ]),
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_face_detection/ui/Screens/Calender/calender_view.dart';
+import 'package:flutter_face_detection/ui/Screens/login/login_view.dart';
 import 'package:flutter_face_detection/ui/Screens/scan/scan_view.dart';
 
 class HomeView extends StatefulWidget {
@@ -24,6 +25,40 @@ class _HomeViewState extends State<HomeView> {
         ),
         backgroundColor: Colors.yellowAccent.shade700,
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.login_outlined),
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return AlertDialog(
+                    title: const Text('Logout'),
+                    content: Text('Are you sure you want to logout?'),
+                    actions: [
+                      TextButton(
+                        child: const Text('CANCEL'),
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                      ),
+                      TextButton(
+                        child: const Text('LOGOUT'),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginView()),
+                          );
+                        },
+                      ),
+                    ],
+                  );
+                },
+              );
+            },
+          ),
+        ],
       ),
       body: Column(
         children: [

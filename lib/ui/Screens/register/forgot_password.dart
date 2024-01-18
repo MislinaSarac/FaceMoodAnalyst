@@ -25,7 +25,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               const Text(
                 'Forgot\nPassword',
                 style: TextStyle(
-                  fontSize: 35.0,
+                  fontSize: 20,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -69,7 +69,8 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       TextSpan(
                         text: 'Have an Account? ',
                         style: TextStyle(
-                            color: Colors.red, fontWeight: FontWeight.bold),
+                          color: Colors.red,
+                        ),
                       ),
                       TextSpan(
                         text: 'Login',

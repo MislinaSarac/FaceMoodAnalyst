@@ -2,6 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_face_detection/custom_color.dart';
+import 'package:flutter_face_detection/ui/Screens/home/home_view.dart';
+import 'package:flutter_face_detection/ui/Screens/home/navbar.dart';
+import 'package:flutter_face_detection/ui/Screens/home/ornek.dart';
+import 'package:flutter_face_detection/ui/Screens/register/register_view.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginView extends StatefulWidget {
@@ -16,7 +20,7 @@ class _LoginViewState extends State<LoginView> {
 
   @override
   void initState() {
-    Timer.periodic(Duration(seconds: 2), (timer) {
+    Timer.periodic(Duration(seconds: 4), (timer) {
       setState(() {
         activeIndex++;
 
@@ -105,6 +109,13 @@ class _LoginViewState extends State<LoginView> {
                 )
               ]),
             ),
+            Text(
+              'Let\'s Goo',
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                  fontStyle: FontStyle.italic),
+            ),
             SizedBox(
               height: 40,
             ),
@@ -184,7 +195,12 @@ class _LoginViewState extends State<LoginView> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ForgotPassword()),
+                    );
+                  },
                   child: Text(
                     'Forgot Password?',
                     style: TextStyle(
@@ -199,7 +215,12 @@ class _LoginViewState extends State<LoginView> {
               height: 30,
             ),
             MaterialButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Navbar()),
+                );
+              },
               height: 45,
               color: MyColors.myColor,
               child: Text(
@@ -225,13 +246,18 @@ class _LoginViewState extends State<LoginView> {
                       fontWeight: FontWeight.w400),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RegisterView()),
+                    );
+                  },
                   child: Text(
                     'Register',
                     style: TextStyle(
                         color: Colors.blue,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.w400),
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold),
                   ),
                 )
               ],
