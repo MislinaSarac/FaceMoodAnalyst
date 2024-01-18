@@ -39,7 +39,7 @@ class _SplashViewState extends State<SplashView> {
               width: 700,
               height: 700,
             ),
-            Text(
+            const Text(
               'EmojiGooo!',
               style: TextStyle(
                   fontSize: 20.0,

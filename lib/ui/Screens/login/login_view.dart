@@ -16,7 +16,7 @@ class _LoginViewState extends State<LoginView> {
 
   @override
   void initState() {
-    Timer.periodic(Duration(seconds: 5), (timer) {
+    Timer.periodic(Duration(seconds: 2), (timer) {
       setState(() {
         activeIndex++;
 
