@@ -2,14 +2,14 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_face_detection/camera_view.dart';
 
-class HomeView extends StatefulWidget {
-  const HomeView({super.key});
+class ScanDetail extends StatefulWidget {
+  const ScanDetail({super.key});
 
   @override
-  State<HomeView> createState() => _HomeViewState();
+  State<ScanDetail> createState() => _ScanDetailState();
 }
 
-class _HomeViewState extends State<HomeView> {
+class _ScanDetailState extends State<ScanDetail> {
   Future<CameraDescription> _getCameras() async {
     final List<CameraDescription> cameras = await availableCameras();
     return cameras[1];

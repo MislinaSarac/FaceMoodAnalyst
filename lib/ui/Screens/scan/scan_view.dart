@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class ScanView extends StatefulWidget {
   const ScanView({super.key});
@@ -25,6 +26,10 @@ class _ScanViewState extends State<ScanView> {
           ),
         ),
         backgroundColor: Colors.yellowAccent.shade700,
+      ),
+      body: Center(
+        child: LottieBuilder.asset('assets/animations/scan.json',
+            width: 300, height: 300),
       ),
     );
   }
