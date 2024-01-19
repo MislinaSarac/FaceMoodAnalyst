@@ -17,7 +17,7 @@ class _SplashViewState extends State<SplashView> {
 
     // Add a delay using Future.delayed
     Timer(
-      Duration(seconds: 2), // Change the duration as per your requirement
+      Duration(seconds: 3), // Change the duration as per your requirement
       () {
         // Navigate to the login page after the delay
         Navigator.pushReplacement(

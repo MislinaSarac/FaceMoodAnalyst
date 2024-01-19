@@ -18,6 +18,7 @@ class _ScanDetailState extends State<ScanDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: FutureBuilder<CameraDescription>(
         future: _getCameras(),
         builder:

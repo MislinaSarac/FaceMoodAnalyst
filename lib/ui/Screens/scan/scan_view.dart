@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_face_detection/scan_detail.dart';
 import 'package:lottie/lottie.dart';
 
 class ScanView extends StatefulWidget {
@@ -28,8 +29,19 @@ class _ScanViewState extends State<ScanView> {
         backgroundColor: Colors.yellowAccent.shade700,
       ),
       body: Center(
-        child: LottieBuilder.asset('assets/animations/scan.json',
-            width: 300, height: 300),
+        child: InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ScanDetail()),
+            );
+          },
+          child: LottieBuilder.asset(
+            'assets/animations/scan.json',
+            width: 300,
+            height: 300,
+          ),
+        ),
       ),
     );
   }
