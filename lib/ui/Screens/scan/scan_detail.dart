@@ -1,6 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_face_detection/camera_view.dart';
+import 'package:flutter_face_detection/ui/Screens/scan/camera_view.dart';
 
 class ScanDetail extends StatefulWidget {
   const ScanDetail({super.key});

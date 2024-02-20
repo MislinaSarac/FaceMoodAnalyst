@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face_detection/scan_detail.dart';
+import 'package:flutter_face_detection/ui/Screens/scan/scan_detail.dart';
 import 'package:lottie/lottie.dart';
 
 class ScanView extends StatefulWidget {
